@@ -15,6 +15,7 @@ Por otro lado, los administradores tienen acceso a un panel exclusivo donde pued
 La app busca combinar una experiencia de usuario amigable con una arquitectura robusta y segura para la gestión de contenido.
 
 ---
+
 ## ⚙️ Guía de Desarrollo del Proyecto ProBuild
 
 ### 🚀 Entorno de Desarrollo
@@ -45,12 +46,54 @@ Para configurar Flutter en tu máquina:
 Después de instalar Flutter, es necesario asegurarse de que los comandos de Flutter estén disponibles en la terminal:
 
 1. Accede a las **Propiedades del Sistema**:  
-   `Panel de control > Sistema > Configuración avanzada del sistema > Variables de entorno`.
+   `Panel de control > Sistema > Configuración avanzada del sistema > Variables de entorno`
 2. Busca la variable `Path` dentro del apartado "Variables del sistema" y selecciona **Editar**.
 3. Añade la ruta completa hacia la carpeta `flutter/bin`.  
    - Ejemplo: `C:\\flutter\\bin` o `/usr/local/flutter/bin`
 
-💡 **Verifica la instalación** ejecutando este comando en tu terminal o consola:
+💡 Verifica la instalación ejecutando este comando en tu terminal o consola:
+
 
 ```bash
 flutter --version
+```
+
+### ✅ Verificación Final del Entorno
+
+Para confirmar que el entorno está correctamente configurado, ejecuta:
+
+```bash
+flutter doctor
+```
+
+
+
+---
+
+## 📌 Requisitos No Funcionales
+
+### 🔒 Seguridad
+- **RNF01:** El sistema debe proteger las credenciales de acceso mediante encriptación.
+- **RNF02:** Solo los usuarios con rol “Admin” podrán acceder al panel administrativo.
+
+### 📱 Usabilidad
+- **RNF03:** La interfaz debe ser intuitiva y apta para usuarios sin conocimientos técnicos.
+- **RNF04:** Los formularios deben validar campos obligatorios antes de enviarse.
+
+### ⚙ Rendimiento
+- **RNF05:** La aplicación debe cargar las builds y héroes en menos de 2 segundos con conexión estable.
+- **RNF06:** Las imágenes de ítems y héroes deben ser optimizadas para dispositivos móviles.
+
+### 💾 Persistencia
+- **RNF07:** Las builds y usuarios deben almacenarse en una base de datos persistente (local o en la nube).
+- **RNF08:** Las builds rechazadas no deben ser visibles por otros usuarios.
+
+### 🔄 Mantenibilidad
+- **RNF09:** El código debe estar estructurado modularmente para facilitar futuras actualizaciones.
+- **RNF10:** Los ítems y héroes deben poder ser añadidos sin necesidad de actualizar la app.
+
+### 🌐 Accesibilidad
+- **RNF11:** La app debe funcionar correctamente en dispositivos con Android 8.0 o superior.
+- **RNF12:** La interfaz debe respetar contrastes mínimos y tamaños legibles según normas de accesibilidad.
+
+---
