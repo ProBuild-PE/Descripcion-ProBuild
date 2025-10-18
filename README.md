@@ -73,27 +73,61 @@ flutter doctor
 ## 📌 Requisitos No Funcionales
 
 ### 🔒 Seguridad
-- **RNF01:** El sistema debe proteger las credenciales de acceso mediante encriptación.
-- **RNF02:** Solo los usuarios con rol “Admin” podrán acceder al panel administrativo.
+
+- **RNF01:**  
+  El sistema deberá garantizar la protección de las credenciales de acceso de los usuarios utilizando técnicas de encriptación segura (por ejemplo, hash con sal usando algoritmos como SHA-256 o bcrypt). Esta medida evitará el almacenamiento de contraseñas en texto plano y reducirá el riesgo ante accesos no autorizados.
+
+- **RNF02:**  
+  El acceso al panel administrativo estará restringido únicamente a usuarios con el rol "admin". Esto será validado durante el proceso de autenticación y verificado en cada acceso a rutas protegidas dentro de la aplicación.
+
+---
 
 ### 📱 Usabilidad
-- **RNF03:** La interfaz debe ser intuitiva y apta para usuarios sin conocimientos técnicos.
-- **RNF04:** Los formularios deben validar campos obligatorios antes de enviarse.
+
+- **RNF03:**  
+  La interfaz de usuario (UI) debe ser sencilla, amigable y comprensible incluso para usuarios que no tengan experiencia previa con aplicaciones móviles o videojuegos. Se priorizará el uso de iconos, botones claros, navegación coherente y retroalimentación visual ante errores o acciones exitosas.
+
+- **RNF04:**  
+  Todos los formularios de la aplicación deben contar con validaciones que impidan el envío de campos vacíos, inválidos o mal formateados (por ejemplo, correos mal escritos o builds sin ítems). Los usuarios deben recibir mensajes de error claros y específicos.
+
+---
 
 ### ⚙ Rendimiento
-- **RNF05:** La aplicación debe cargar las builds y héroes en menos de 2 segundos con conexión estable.
-- **RNF06:** Las imágenes de ítems y héroes deben ser optimizadas para dispositivos móviles.
+
+- **RNF05:**  
+  La aplicación debe responder de forma eficiente y mantener un tiempo de carga inferior a 2 segundos al listar builds, héroes o contenido clave, siempre que se cuente con una conexión a internet estable.
+
+- **RNF06:**  
+  Las imágenes utilizadas (de ítems y héroes) deben estar comprimidas y optimizadas para evitar un alto consumo de datos y garantizar una experiencia fluida en dispositivos de gama media o baja.
+
+---
 
 ### 💾 Persistencia
-- **RNF07:** Las builds y usuarios deben almacenarse en una base de datos persistente (local o en la nube).
-- **RNF08:** Las builds rechazadas no deben ser visibles por otros usuarios.
+
+- **RNF07:**  
+  Toda la información crítica del sistema (builds, usuarios, héroes e ítems) debe almacenarse en una base de datos confiable y persistente (local o remota), asegurando que los datos no se pierdan al cerrar la app o reiniciar el dispositivo.
+
+- **RNF08:**  
+  Las builds que hayan sido rechazadas por un administrador no deben ser visibles en la sección de búsqueda pública ni en el listado general de builds por héroe. Solo el creador podrá verlas desde su cuenta.
+
+---
 
 ### 🔄 Mantenibilidad
-- **RNF09:** El código debe estar estructurado modularmente para facilitar futuras actualizaciones.
-- **RNF10:** Los ítems y héroes deben poder ser añadidos sin necesidad de actualizar la app.
+
+- **RNF09:**  
+  El código fuente de la aplicación debe estar organizado por módulos o componentes reutilizables, respetando principios de diseño limpio (Clean Code). Esto facilitará futuras mejoras, correcciones de errores o implementación de nuevas funcionalidades.
+
+- **RNF10:**  
+  El sistema de gestión de ítems y héroes debe estar desacoplado de la lógica principal para permitir añadir o modificar contenido sin necesidad de recompilar ni actualizar la app desde las tiendas.
+
+---
 
 ### 🌐 Accesibilidad
-- **RNF11:** La app debe funcionar correctamente en dispositivos con Android 8.0 o superior.
-- **RNF12:** La interfaz debe respetar contrastes mínimos y tamaños legibles según normas de accesibilidad.
+
+- **RNF11:**  
+  La aplicación debe ser totalmente funcional en dispositivos con sistema operativo **Android 8.0 (API 26)** o superior, cubriendo así un rango amplio de compatibilidad con smartphones activos en el mercado.
+
+- **RNF12:**  
+  La interfaz debe respetar buenas prácticas de accesibilidad, como contraste suficiente entre texto y fondo, tamaños de fuente legibles y uso adecuado de colores para personas con daltonismo. Además, debe ser navegable con gestos básicos sin necesidad de periféricos adicionales.
 
 ---
