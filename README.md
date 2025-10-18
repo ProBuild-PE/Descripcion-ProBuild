@@ -131,3 +131,16 @@ flutter doctor
   La interfaz debe respetar buenas prácticas de accesibilidad, como contraste suficiente entre texto y fondo, tamaños de fuente legibles y uso adecuado de colores para personas con daltonismo. Además, debe ser navegable con gestos básicos sin necesidad de periféricos adicionales.
 
 ---
+
+
+---
+
+## 📝 Descripción Casos de Uso 
+## RF01: Registro del Usuario
+
+El sistema debe permitir a los nuevos usuarios registrarse ingresando su correo electrónico, contraseña, distrito, apellidos y sexo.  
+Todos los campos son obligatorios y deben validarse antes del envío del formulario.  
+Al completar el registro, el usuario será redirigido a la pantalla de inicio de sesión.
+
+![Pantalla de Registro](assets/rf1-1.png)
+![Pantalla de Registro](assets/rf1-2.png)
