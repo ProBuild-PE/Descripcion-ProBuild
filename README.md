@@ -145,6 +145,8 @@ Al completar el registro, el usuario será redirigido a la pantalla de inicio de
 ![Pantalla de Registro](assets/rf1-1.png)
 ![Pantalla de Registro](assets/rf1-2.png)
 
+---
+
 ## RF02: Inicio de sesión del usuario
 
 El sistema debe permitir que el usuario inicie sesión correctamente ingresando su **correo electrónico** y **contraseña** registrados.  
@@ -153,6 +155,8 @@ Si las credenciales son correctas, el sistema debe **redirigir al usuario a la p
 Si las credenciales no son válidas, el sistema debe **mostrar un mensaje de error claro** y evitar el acceso.
 
 ![Pantalla de Registro](assets/rf2-1.png)
+
+---
 
 ## RF03: Navegación principal para el usuario
 
@@ -170,11 +174,10 @@ Esta navegación debe incluir:
 
 Esta estructura de navegación debe ser consistente en toda la app, y debe facilitar la exploración del contenido sin necesidad de múltiples pasos o menús ocultos.
 
-**Diseño referencial:**
-
 ![Navegación principal del usuario](assets/rf3-1.png)
 ![Navegación principal del usuario](assets/rf3-2.png)
 
+---
 
 ### RF04: Creación de builds personalizadas
 
@@ -191,8 +194,6 @@ El sistema debe validar que:
 - Todos los campos estén completos.
 - Se hayan seleccionado 6 ítems.
 - El héroe y la fase sean válidos.
-
-**Diseño referencial:**
 
 ![Pantalla de Crear Build](assets/rf4-1.png)
 ![Pantalla de Crear Build](assets/rf4-2.png)
@@ -216,9 +217,9 @@ Cada resultado debe incluir:
 
 El sistema debe actualizar los resultados automáticamente cada vez que el usuario modifique los filtros.
 
-**Diseño referencial:**
-
 ![Pantalla de Buscar Build](assets/rf5-1.png)
+
+---
 
 ### RF06: Eliminación de builds personales desde su vista detallada
 
@@ -234,10 +235,10 @@ Antes de proceder con la eliminación, el sistema debe:
 
 Esta funcionalidad evita modificaciones accidentales y garantiza el control de los usuarios sobre su propio contenido.
 
-**Diseño referencial:**
-
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-1.png)
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-2.png)
+
+---
 
 ### RF07: Visualización de builds personales con filtro de estado
 
@@ -258,10 +259,10 @@ Cada build listada debe incluir una tarjeta con:
 
 El sistema debe actualizar la lista automáticamente al cambiar de filtro.
 
-**Diseño referencial:**
-
 ![Pantalla de Tus Builds con filtro](assets/rf7-1.png)
 ![Pantalla de Tus Builds con filtro](assets/rf7-2.png)
+
+---
 
 ### RF08: Edición del perfil de usuario
 
@@ -279,11 +280,11 @@ El sistema debe:
 - Actualizar la información en la base de datos al presionar el botón “Actualizar”.
 - Mostrar un mensaje de confirmación una vez que la actualización haya sido exitosa.
 
-Opcionalmente, puede incluir la funcionalidad de **actualizar foto de perfil**, si se implementa en futuras versiones.
-
-**Diseño referencial:**
+También incluye la funcionalidad de **actualizar foto de perfil**.
 
 ![Pantalla de Mi Perfil](assets/rf8-1.png)
+
+---
 
 ### RF09: Acceso al panel de administración
 
@@ -296,9 +297,9 @@ Desde este panel, el administrador podrá acceder rápidamente a las siguientes 
 
 El diseño debe ser claro, centrado en la acción, y estar acompañado por una **barra de navegación inferior** específica para el administrador.
 
-**Diseño referencial:**
-
 ![Panel principal del admin](assets/rf9-1.png)
+
+---
 
 ### RF10: Revisión y gestión de builds pendientes
 
@@ -317,9 +318,9 @@ El administrador podrá tomar una decisión con los botones:
 
 La acción debe guardarse en la base de datos y desaparecer de la lista automáticamente.
 
-**Diseño referencial:**
-
 ![Pantalla de builds pendientes](assets/rf10-1.png)
+
+---
 
 ### RF11: Registro de nuevos héroes
 
@@ -334,9 +335,10 @@ Al presionar el botón “Aceptar”:
 - Se guarda el nuevo héroe en la base de datos.
 - El nuevo héroe aparece disponible para creación de builds.
 
-**Diseño referencial:**
-
 ![Pantalla de agregar héroe](assets/rf11-1.png)
+![Pantalla de agregar héroe](assets/rf11-2.png)
+
+---
 
 ### RF12: Registro de nuevos ítems
 
@@ -348,9 +350,8 @@ Debe completarse:
 
 Al presionar “Aceptar”, el ítem se guarda en el sistema y será visible en el componente selector de ítems al momento de crear una build.
 
-**Diseño referencial:**
-
 ![Pantalla de agregar ítem](assets/rf12-1.png)
+![Pantalla de agregar ítem](assets/rf12-2.png)
 
 
 
