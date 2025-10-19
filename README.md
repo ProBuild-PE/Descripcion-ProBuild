@@ -263,6 +263,7 @@ Esta funcionalidad permite un acceso claro a la información completa de una bui
 
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-1.png)
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-2.png)
+![Pantalla Ver Build con opción de eliminación](assets/rf6-3.png)
 
 ---
 
