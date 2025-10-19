@@ -133,6 +133,13 @@ flutter doctor
 
 ---
 
+### Diagrama Relacional
+![Navegación principal del usuario](assets/diagramarelacional.png)
+
+---
+
+### 🛠️ Diagrama de casos de uso
+![Navegación principal del usuario](assets/CasosDeUso.png)
 
 ---
 
@@ -180,7 +187,7 @@ Esta estructura de navegación debe ser consistente en toda la app, y debe facil
 
 ---
 
-### RF04: Creación de builds personalizadas
+## RF04: Creación de builds personalizadas
 
 El sistema debe permitir al usuario crear una build personalizada para un héroe de Dota 2, especificando los siguientes elementos:
 
@@ -199,7 +206,10 @@ El sistema debe validar que:
 ![Pantalla de Crear Build](assets/rf4-1.png)
 ![Pantalla de Crear Build](assets/rf4-2.png)
 
-### RF05: Búsqueda de builds por héroe y fase
+
+---
+
+## RF05: Búsqueda de builds por héroe y fase
 
 El sistema debe permitir al usuario buscar builds existentes a partir de dos filtros principales:
 
@@ -222,26 +232,41 @@ El sistema debe actualizar los resultados automáticamente cada vez que el usuar
 
 ---
 
-### RF06: Eliminación de builds personales desde su vista detallada
+## RF06: Visualización detallada de Builds
 
-El sistema debe permitir al usuario **eliminar una build propia** desde la pantalla de detalle, siempre que él sea el creador de dicha build.  
-Esta opción debe estar visible mediante un botón claramente identificado como **“Eliminar Build”** al final del contenido.
+El sistema debe permitir al usuario visualizar en detalle la información completa de una build seleccionada. Esta pantalla debe incluir:
 
-Antes de proceder con la eliminación, el sistema debe:
+- Nombre del héroe.
+- Fase del juego (Early Game / Late Game).
+- Fecha de creación.
+- Distrito del autor.
+- Lista de ítems.
+- Comentario del creador.
+- Valoración (likes/dislikes).
 
-- Verificar que el usuario autenticado sea el autor de la build.
-- Mostrar un mensaje de confirmación que pregunte si está seguro de eliminar la build.
-- Eliminar la build de la base de datos en caso de confirmación positiva.
-- Redirigir al usuario a la pantalla principal o de “Mis Builds” después de la eliminación exitosa.
+#### 🔐 Acciones Condicionales según el rol del usuario
 
-Esta funcionalidad evita modificaciones accidentales y garantiza el control de los usuarios sobre su propio contenido.
+- **Si el usuario es el creador de la build:**
+  - Se mostrará un botón claramente identificado como **“Eliminar Build”** al final del contenido.
+  - Antes de proceder con la eliminación, el sistema debe:
+    - Verificar que el usuario autenticado sea el autor de la build.
+    - Mostrar un mensaje de confirmación preguntando si está seguro de eliminarla.
+    - Eliminar la build de la base de datos en caso de confirmación.
+    - Redirigir al usuario a la pantalla principal o “Mis Builds” tras la eliminación exitosa.
+
+- **Si el usuario NO es el creador de la build:**
+  - Se mostrará un botón **“Guardar Build”** al final de la pantalla.
+  - Al hacer clic, la build se añadirá a la sección “Builds Guardadas”.
+  - Esta opción no debe estar disponible si la build ya fue guardada anteriormente por el mismo usuario.
+
+Esta funcionalidad permite un acceso claro a la información completa de una build y proporciona acciones coherentes según el rol del usuario respecto a la build visualizada.
 
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-1.png)
 ![Pantalla Ver Build con opción de eliminación](assets/rf6-2.png)
 
 ---
 
-### RF07: Visualización de builds personales con filtro de estado
+## RF07: Visualización de builds personales con filtro de estado
 
 El sistema debe permitir al usuario acceder a una sección donde pueda consultar únicamente las builds que **él ha creado**.
 
@@ -265,7 +290,7 @@ El sistema debe actualizar la lista automáticamente al cambiar de filtro.
 
 ---
 
-### RF08: Edición del perfil de usuario
+## RF08: Edición del perfil de usuario
 
 El sistema debe permitir al usuario acceder a una sección denominada **"Mi Perfil"**, donde podrá consultar y actualizar sus datos personales.
 
@@ -287,7 +312,7 @@ También incluye la funcionalidad de **actualizar foto de perfil**.
 
 ---
 
-### RF09: Acceso al panel de administración
+## RF09: Acceso al panel de administración
 
 El sistema debe mostrar un **panel exclusivo** para usuarios con rol “admin” luego de autenticarse correctamente.  
 Desde este panel, el administrador podrá acceder rápidamente a las siguientes funciones mediante botones visibles:
@@ -302,7 +327,7 @@ El diseño debe ser claro, centrado en la acción, y estar acompañado por una *
 
 ---
 
-### RF10: Revisión y gestión de builds pendientes
+## RF10: Revisión y gestión de builds pendientes
 
 El sistema debe mostrar al administrador una lista de **builds enviadas por usuarios** que se encuentren en estado “pendiente”.
 
@@ -323,7 +348,7 @@ La acción debe guardarse en la base de datos y desaparecer de la lista automát
 
 ---
 
-### RF11: Registro de nuevos héroes
+## RF11: Registro de nuevos héroes
 
 El sistema debe permitir al administrador agregar nuevos héroes al catálogo disponible para los usuarios.
 
@@ -341,7 +366,7 @@ Al presionar el botón “Aceptar”:
 
 ---
 
-### RF12: Registro de nuevos ítems
+## RF12: Registro de nuevos ítems
 
 El sistema debe permitir al administrador registrar nuevos ítems utilizables en las builds.
 
@@ -353,6 +378,19 @@ Al presionar “Aceptar”, el ítem se guarda en el sistema y será visible en 
 
 ![Pantalla de agregar ítem](assets/rf12-1.png)
 ![Pantalla de agregar ítem](assets/rf12-2.png)
+
+---
+
+## RF13: Guardar Builds de otros usuarios
+
+El sistema debe permitir al usuario guardar builds de otros creadores para consultarlas posteriormente.
+
+- En la pantalla de **"Builds Guardadas"**, se mostrarán todas las builds guardadas organizadas por orden cronológico (más reciente a más antigua).
+- Cada build guardada incluirá su visualización en forma de tarjeta, con miniaturas de los ítems, nombre del héroe, fase del juego y creador.
+- Desde esta vista, el usuario podrá hacer clic en **“Ver”** para revisar nuevamente la build guardada.
+
+![Pantalla de agregar ítem](assets/rf13-1.png)
+
 
 
 
