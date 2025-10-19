@@ -66,8 +66,9 @@ Para confirmar que el entorno está correctamente configurado, ejecuta:
 flutter doctor
 ```
 
-
-
+---
+## 📌 Diagrama de Despliegue
+![Pantalla de Registro](assets/DiagramaDeDespliegue.png)
 ---
 
 ## 📌 Requisitos No Funcionales
