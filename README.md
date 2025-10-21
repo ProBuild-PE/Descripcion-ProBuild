@@ -68,7 +68,7 @@ flutter doctor
 
 ---
 ## 📌 Diagrama de Despliegue
-![Pantalla de Registro](assets/DiagramaDeDespliegue.png)
+![Pantalla de Registro](assets/assets_descripcion/DiagramaDeDespliegue.png)
 ---
 
 ## 📌 Requisitos No Funcionales
@@ -134,12 +134,12 @@ flutter doctor
 ---
 
 ### Diagrama Relacional
-![Navegación principal del usuario](assets/diagramarelacional.png)
+![Navegación principal del usuario](assets/assets_descripcion/diagramarelacional.png)
 
 ---
 
 ### 🛠️ Diagrama de casos de uso
-![Navegación principal del usuario](assets/CasosDeUso.png)
+![Navegación principal del usuario](assets/assets_descripcion/CasosDeUso.png)
 
 ---
 
@@ -150,8 +150,8 @@ El sistema debe permitir a los nuevos usuarios registrarse ingresando su correo 
 Todos los campos son obligatorios y deben validarse antes del envío del formulario.  
 Al completar el registro, el usuario será redirigido a la pantalla de inicio de sesión.
 
-![Pantalla de Registro](assets/rf1-1.png)
-![Pantalla de Registro](assets/rf1-2.png)
+![Pantalla de Registro](assets/assets_descripcion/rf1-1.png)
+![Pantalla de Registro](assets/assets_descripcion/rf1-2.png)
 
 ---
 
@@ -162,7 +162,7 @@ Antes de otorgar acceso, el sistema debe **autenticar las credenciales** verific
 Si las credenciales son correctas, el sistema debe **redirigir al usuario a la pantalla principal correspondiente a su rol (usuario o administrador)**.  
 Si las credenciales no son válidas, el sistema debe **mostrar un mensaje de error claro** y evitar el acceso.
 
-![Pantalla de Registro](assets/rf2-1.png)
+![Pantalla de Registro](assets/assets_descripcion/rf2-1.png)
 
 ---
 
@@ -182,8 +182,8 @@ Esta navegación debe incluir:
 
 Esta estructura de navegación debe ser consistente en toda la app, y debe facilitar la exploración del contenido sin necesidad de múltiples pasos o menús ocultos.
 
-![Navegación principal del usuario](assets/rf3-1.png)
-![Navegación principal del usuario](assets/rf3-2.png)
+![Navegación principal del usuario](assets/assets_descripcion/rf3-1.png)
+![Navegación principal del usuario](assets/assets_descripcion/rf3-2.png)
 
 ---
 
@@ -203,8 +203,8 @@ El sistema debe validar que:
 - Se hayan seleccionado 6 ítems.
 - El héroe y la fase sean válidos.
 
-![Pantalla de Crear Build](assets/rf4-1.png)
-![Pantalla de Crear Build](assets/rf4-2.png)
+![Pantalla de Crear Build](assets/assets_descripcion/rf4-1.png)
+![Pantalla de Crear Build](assets/assets_descripcion/rf4-2.png)
 
 
 ---
@@ -228,7 +228,7 @@ Cada resultado debe incluir:
 
 El sistema debe actualizar los resultados automáticamente cada vez que el usuario modifique los filtros.
 
-![Pantalla de Buscar Build](assets/rf5-1.png)
+![Pantalla de Buscar Build](assets/assets_descripcion/rf5-1.png)
 
 ---
 
@@ -261,9 +261,9 @@ El sistema debe permitir al usuario visualizar en detalle la información comple
 
 Esta funcionalidad permite un acceso claro a la información completa de una build y proporciona acciones coherentes según el rol del usuario respecto a la build visualizada.
 
-![Pantalla Ver Build con opción de eliminación](assets/rf6-1.png)
-![Pantalla Ver Build con opción de eliminación](assets/rf6-2.png)
-![Pantalla Ver Build con opción de eliminación](assets/rf6-3.png)
+![Pantalla Ver Build con opción de eliminación](assets/assets_descripcion/rf6-1.png)
+![Pantalla Ver Build con opción de eliminación](assets/assets_descripcion/rf6-2.png)
+![Pantalla Ver Build con opción de eliminación](assets/assets_descripcion/rf6-3.png)
 
 ---
 
@@ -286,8 +286,8 @@ Cada build listada debe incluir una tarjeta con:
 
 El sistema debe actualizar la lista automáticamente al cambiar de filtro.
 
-![Pantalla de Tus Builds con filtro](assets/rf7-1.png)
-![Pantalla de Tus Builds con filtro](assets/rf7-2.png)
+![Pantalla de Tus Builds con filtro](assets/assets_descripcion/rf7-1.png)
+![Pantalla de Tus Builds con filtro](assets/assets_descripcion/rf7-2.png)
 
 ---
 
@@ -309,7 +309,7 @@ El sistema debe:
 
 También incluye la funcionalidad de **actualizar foto de perfil**.
 
-![Pantalla de Mi Perfil](assets/rf8-1.png)
+![Pantalla de Mi Perfil](assets/assets_descripcion/rf8-1.png)
 
 ---
 
@@ -324,7 +324,7 @@ Desde este panel, el administrador podrá acceder rápidamente a las siguientes 
 
 El diseño debe ser claro, centrado en la acción, y estar acompañado por una **barra de navegación inferior** específica para el administrador.
 
-![Panel principal del admin](assets/rf9-1.png)
+![Panel principal del admin](assets/assets_descripcion/rf9-1.png)
 
 ---
 
@@ -345,7 +345,7 @@ El administrador podrá tomar una decisión con los botones:
 
 La acción debe guardarse en la base de datos y desaparecer de la lista automáticamente.
 
-![Pantalla de builds pendientes](assets/rf10-1.png)
+![Pantalla de builds pendientes](assets/assets_descripcion/rf10-1.png)
 
 ---
 
@@ -362,8 +362,8 @@ Al presionar el botón “Aceptar”:
 - Se guarda el nuevo héroe en la base de datos.
 - El nuevo héroe aparece disponible para creación de builds.
 
-![Pantalla de agregar héroe](assets/rf11-1.png)
-![Pantalla de agregar héroe](assets/rf11-2.png)
+![Pantalla de agregar héroe](assets/assets_descripcion/rf11-1.png)
+![Pantalla de agregar héroe](assets/assets_descripcion/rf11-2.png)
 
 ---
 
@@ -377,8 +377,8 @@ Debe completarse:
 
 Al presionar “Aceptar”, el ítem se guarda en el sistema y será visible en el componente selector de ítems al momento de crear una build.
 
-![Pantalla de agregar ítem](assets/rf12-1.png)
-![Pantalla de agregar ítem](assets/rf12-2.png)
+![Pantalla de agregar ítem](assets/assets_descripcion/rf12-1.png)
+![Pantalla de agregar ítem](assets/assets_descripcion/rf12-2.png)
 
 ---
 
@@ -390,7 +390,7 @@ El sistema debe permitir al usuario guardar builds de otros creadores para consu
 - Cada build guardada incluirá su visualización en forma de tarjeta, con miniaturas de los ítems, nombre del héroe, fase del juego y creador.
 - Desde esta vista, el usuario podrá hacer clic en **“Ver”** para revisar nuevamente la build guardada.
 
-![Pantalla de agregar ítem](assets/rf13-1.png)
+![Pantalla de agregar ítem](assets/assets_descripcion/rf13-1.png)
 
 
 
